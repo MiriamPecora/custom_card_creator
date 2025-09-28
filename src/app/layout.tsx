@@ -32,7 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex crt-screen bg-radial from-[var(--secondary)] to-black/20 items-center justify-center h-screen md:max-h-screen md:w-screen overflow-hidden">
-          <div className="fixed bottom-3 lg:bottom-40">
+          <div className="fixed top-16 lg:bottom-40 lg:top-auto">
             <ThemeToggle />
           </div>
           <main className="max-w-3xl border-t border-b md:border border-[var(--accent-text)] border-dotted w-full shadow-[15px_15px_15px_var(--primary-text)]/40">
