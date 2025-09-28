@@ -1,0 +1,133 @@
+{
+  "skintone": {
+    "pale": {
+      "name": "Pale",
+      "image": "/customizations_elements/skintones/paleskin.png"
+    },
+    "tan": {
+      "name": "Tan",
+      "image": "/customizations_elements/skintones/tanskin.png"
+    },
+    "dark": {
+      "name": "Dark",
+      "image": "/customizations_elements/skintones/darkskin.png"
+    },
+    "darker": {
+      "name": "Darker",
+      "image": "/customizations_elements/skintones/darkerskin.png"
+    }
+  },
+
+  "hair": {
+    "fringe": {
+      "blonde": {
+        "name": "Fringe Blonde",
+        "image": "/customizations_elements/hair/fringe/blonde_fringe.png"
+      },
+      "red": {
+        "name": "Fringe Red",
+        "image": "/customizations_elements/hair/fringe/red_fringe.png"
+      },
+      "black": {
+        "name": "Fringe Black",
+        "image": "/customizations_elements/hair/fringe/black_fringe.png"
+      },
+      "grey": {
+        "name": "Fringe Grey",
+        "image": "/customizations_elements/hair/fringe/grey_fringe.png"
+      }
+    },
+    "ponytails": {
+      "blonde": {
+        "name": "Ponytails Blonde",
+        "image": "/customizations_elements/hair/ponytails/blonde_ponytails.png"
+      },
+      "red": {
+        "name": "Ponytails Red",
+        "image": "/customizations_elements/hair/ponytails/red_ponytails.png"
+      },
+      "black": {
+        "name": "Ponytails Black",
+        "image": "/customizations_elements/hair/ponytails/black_ponytails.png"
+      },
+      "grey": {
+        "name": "Ponytails Grey",
+        "image": "/customizations_elements/hair/ponytails/grey_ponytails.png"
+      }
+    },
+    "short": {
+      "blonde": {
+        "name": "Short Blonde",
+        "image": "/customizations_elements/hair/short/blonde_short.png"
+      },
+      "red": {
+        "name": "Short Red",
+        "image": "/customizations_elements/hair/short/red_short.png"
+      },
+      "black": {
+        "name": "Short Black",
+        "image": "/customizations_elements/hair/short/black_short.png"
+      },
+      "grey": {
+        "name": "Short Grey",
+        "image": "/customizations_elements/hair/short/grey_short.png"
+      }
+    },
+    "shortest": {
+      "blonde": {
+        "name": "Shortest Blonde",
+        "image": "/customizations_elements/hair/shortest/blonde_shortest.png"
+      },
+      "red": {
+        "name": "Shortest Red",
+        "image": "/customizations_elements/hair/shortest/red_shortest.png"
+      },
+      "black": {
+        "name": "Shortest Black",
+        "image": "/customizations_elements/hair/shortest/black_shortest.png"
+      },
+      "grey": {
+        "name": "Shortest Grey",
+        "image": "/customizations_elements/hair/shortest/grey_shortest.png"
+      }
+    }
+  },
+
+  "eyes": {
+    "brown": {
+      "name": "Brown Eyes",
+      "image": "/customizations_elements/eyes/brown_eyes.png"
+    },
+    "blue": {
+      "name": "Blue Eyes",
+      "image": "/customizations_elements/eyes/blue_eyes.png"
+    },
+    "green": {
+      "name": "Green Eyes",
+      "image": "/customizations_elements/eyes/green_eyes.png"
+    }
+  },
+
+  "clothes": {
+    "purple": {
+      "name": "Purple Shirt",
+      "image": "/customizations_elements/clothes/purple_shirt.png"
+    },
+    "hipster": {
+      "name": "Hipster",
+      "image": "/customizations_elements/clothes/hipster.png"
+    },
+    "cape": {
+      "name": "Pink Cape",
+      "image": "/customizations_elements/clothes/pink_cape.png"
+    },
+    "salopette": {
+      "name": "Salopette",
+      "image": "/customizations_elements/clothes/salopette.png"
+    },
+    "tie": {
+      "name": "Tie",
+      "image": "/customizations_elements/clothes/tie.png"
+    }
+  }
+}

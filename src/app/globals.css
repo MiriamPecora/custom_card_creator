@@ -1,26 +1,127 @@
 @import "tailwindcss";
 
+/* Base Variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #241919;
+  --primary-text: #fff0f0;
+  --accent-text: #81f7ff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Themes */
+
+/* Pipboy */
+:root.Pip-Boy {
+  --background: #001b00;
+  --primary-text: #10ff10;
+  --accent-text: #f0ff21;
+  --secondary: #2c4122;
+  --secondary-text: #0f2b15;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Fairy */
+:root.Blush {
+  --background: #ffdae2;
+  --primary-text: #1d10cf;
+  --accent-text: #e6388c;
+  --secondary: #fca1bc;
+  --secondary-text: #f4ff95;
+}
+
+/* Cyberpunk */
+:root.Cyberpunk {
+  --background: #0d001a;
+  --primary-text: #00ffdd;
+  --accent-text: #f700ff;
+  --secondary: #59006b;
+  --secondary-text: #fffb00;
+}
+
+/* Nier */
+:root.YoRHa {
+  --background: #cec0a3;
+  --primary-text: #382307;
+  --accent-text: #3b0303;
+  --secondary: #f0e1d5;
+  --secondary-text: #faecd2;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--primary-text);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* custom scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: var(--accent-text);
+  border-radius: 9999px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-text) transparent;
+}
+
+/* crt effects */
+
+.crt::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0.123) 87%,
+    rgba(233, 233, 233, 0.089) 87%
+  );
+  z-index: 80;
+  background-size: 100% 4px;
+  pointer-events: none;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 1) inset;
+
+  animation: scanlines-shift 0.3s steps(2) infinite;
+}
+
+@keyframes scanlines-shift {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: 2px;
+  }
+}
+
+.crt-chroma-shift {
+  font-family: "Monospace", monospace;
+
+  text-shadow: 0 0 1px rgba(0, 255, 0, 0.05), -0.5px 0 1px rgba(0, 30, 255, 0.7),
+    0.5px 0 1px rgba(255, 0, 80, 0.7);
+
+  animation: chroma-flicker 0.15s infinite alternate;
+}
+
+@keyframes chroma-flicker {
+  0% {
+    text-shadow: -0.5px -0.5px 1px rgba(0, 30, 255, 0.8),
+      0.5px 0.5px 2px rgba(255, 0, 80, 0.4);
+  }
+  100% {
+    text-shadow: 0.5px 0.5px 1px rgba(255, 0, 80, 0.8),
+      -0.5px -0.5px 2px rgba(0, 30, 255, 0.4);
+  }
+}
+.crt-screen {
+  border-radius: 10% / 10%;
+  overflow: hidden;
 }
